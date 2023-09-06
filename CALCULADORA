@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+    inteiro fator1
+    inteiro fator2
+    inteiro
+    inteiro
+    escreva ("Digite dois números para se calcular e te entregarei operações com eles: \n")
+    escreva ("Digite o fator1")
+    leia (fator1)
+    escreva ("Digite o fator2")
+    leia (fator2
+    Escreva ("Digite qual operação deseja realizar: \n"))
+    ("adição ="), 
+    fator1+fator2,
+    "\n",
+  }
+}
