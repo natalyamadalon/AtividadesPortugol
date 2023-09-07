@@ -1,0 +1,32 @@
+programa {
+  funcao inicio() {
+  //Declaração das variaveis a serem usadas
+  caracter opcao //variavel que guarda a opção de operador escolhida
+  real fator1 // variavel que guarda o fator de operação 1
+  real fator2 // variavel que guarda o fator de operação 2
+  real resultado // variavel que guarda o resultado
+
+  escreva("Calculadora de conversão de temperaturas\n")
+  escreva("\nEscolha a operação:\n")
+  escreva("1 - Celsius para Fahrenheit\n")
+  escreva("2 - Fahrenheit para Celsius\n")
+  escreva("\nOperação escolhida:\t")
+  leia(opcao)
+
+ se (opcao == 1) {
+      escreva("\nDigite o valor em Celsius que deseja converter:\t\n")
+      escreva("valor:\t")
+      leia(fator1)
+      resultado = fator1 * 1.8 + 32
+      escreva("\nO resultado em Fahrenheit é:\t", resultado, "\n")
+      }
+
+  se (opcao == 2) {
+      escreva("\nDigite o valor em Fahrenheit que deseja converter:\t\n")
+      escreva("valor:\t")
+      leia(fator2)
+      resultado = (fator2-32)/1.8 
+      escreva("\nO resultado em Celsius é:\t", resultado, "\n")
+      }
+  }
+}
