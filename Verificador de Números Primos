@@ -1,8 +1,6 @@
 programa {
   funcao inicio() {
-  inteiro fator1 // variavel que guarda o fator de operação 1
-  inteiro fator2 // variavel que guarda o fator de operação 2
-  inteiro resultado // variavel que guarda o resultado
+  inteiro 
   
   funcao calcular(){
   escreva("Verificador de Números Primos\n")
@@ -10,13 +8,7 @@ programa {
   escreva("\nOperação escolhida:\t")
   leia(opcao)
 
-  se (opcao > 1) {
-      escreva("valor:\t")
-      leia(fator1)
-      resultado = fator1 * 1.8 + 32
-      escreva("\nO resultado é:\t", resultado, "°F\n")
-
-  se (numero > 1) {escreva("O número é maior que 1")
+  se (numero > 1) 
+  {escreva("O número é maior que 1")
   }
 }
-
