@@ -12,3 +12,20 @@ programa {
   {escreva("O número é maior que 1")
   }
 }
+
+
+
+programa {
+  funcao inicio() {
+  inteiro 
+  
+  funcao calcular(){
+  escreva("Verificador de Números Primos\n\n")
+  escreva("\nDigite um número e direi se o mesmo é um número primo ou não:\n")
+  escreva("\n:\t")
+  leia(opcao)
+  
+  se (opcao > 1) 
+  {escreva("O número é maior que 1")
+  }
+}
