@@ -1,0 +1,7 @@
+programa {
+  real peso, altura, formula = peso/(altura*altura)
+  // imc <= 18.5 é abaixo do peso, imc <= 24.9 é peso ideal, imc >= 25 é acima do peso
+  funcao inicio() {
+    
+  }
+}
