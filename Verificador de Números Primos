@@ -2,7 +2,7 @@ programa {
   funcao inicio() {
     inteiro x, valor = 1, divisores = 0
     escreva("Verificador de Números Primos\n\n")
-    escreva ("\nDigite um valor e direi se o mesmo é um número primo ou não:")
+    escreva ("\nDigite um valor e direi se o mesmo é um número primo ou não:\t")
     leia (x)
 
     se (x > 0){
