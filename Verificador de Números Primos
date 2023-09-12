@@ -1,34 +1,14 @@
 programa {
   funcao inicio() {
-  inteiro 
-  
-  funcao calcular(){
-  escreva("Verificador de Números Primos\n")
-  escreva("\nDigite um número e direi se o mesmo é um número primo ou não:\n")
-  escreva("\nOperação escolhida:\t")
-  leia(opcao)
-
-  se (numero > 1) 
-  {escreva("O número é maior que 1")
-  }
-}
-
-
-
-programa {
-  funcao inicio() {
     inteiro x, valor = 1, divisores = 0
-  
-    escreva ("escreva um valor: ")
+    escreva("Verificador de Números Primos\n\n")
+    escreva ("\nDigite um valor e direi se o mesmo é um número primo ou não:")
     leia (x)
 
     se (x > 0){
-    enquanto (valor <= x){
-      se ( x % valor == 0){divisores++}
-      se (divisores == 2){ escreva ("O número ", x,"\té primo!\n")}
-      senao {escreva ("o número ", x,"\t não é primo!\n")}
-      leia
-          }
-}
-}
-}
+      enquanto (valor <= x)
+      {se ( x % valor == 0){divisores++}valor++}
+
+    se (divisores == 2) 
+      escreva ("O número ", x,"\té primo!\n")
+      senao {escreva ("o número ", x,"\t não é primo!\n")}}}}
