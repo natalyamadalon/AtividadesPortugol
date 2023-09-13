@@ -1,1 +1,32 @@
-
+programa {
+  inclua biblioteca Matematica-->mat
+  logico reiniciar = verdadeiro
+  real capital, juros, montante
+  inteiro tempo, i   
+   
+  funcao juros () {
+    escreva("Calculadora de Juros Compostos\n\n\n")
+    escreva("Informe os dados abaixo:\n")
+    escreva("Capital: ")
+    leia(capital)
+    escreva("Juros: ")
+    leia(juros)
+    escreva("Meses: ")
+    leia(tempo)
+    juros = juros/100
+    montante = capital * (1+juros+tempo)
+    para(i=1;i<=tempo;i++){
+    escreva("montante: ", montante,"\n")
+    montante = montante + (montante)
+    }
+  }
+  
+  funcao inicio() {
+    enquanto(reiniciar){
+    juros()
+    escreva("\nDeseja calcular novamente? Para sim 'verdadeiro' ou 'falso' para encerrar\n")
+    leia(reiniciar)
+    limpa()
+    }
+  }
+}
