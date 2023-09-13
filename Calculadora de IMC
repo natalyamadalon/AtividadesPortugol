@@ -3,7 +3,9 @@ programa {
   real peso
   real result
 
-  funcao inicio() {
+  logico reiniciar = verdadeiro
+  funcao imc(){
+    limpa ()
     escreva("Calculadora de IMC\n")
     escreva("\nDigite a sua altura:\t\n")
     escreva("resposta:\t")
@@ -21,16 +23,18 @@ programa {
       se (result <= 24.9){
         escreva("\n\nVocê está com o peso ideial\n")}
 
-      se (result <= 29.9){
-        escreva("\n\nVoce esta levemente acima do peso\n")}
-      
-      se (result <= 34.9){
-        escreva("\n\nVocê está com obesidade I\n")}
-      
-      se (result <= 39.9){
-        escreva("\n\nVocê está com obesidade II\n")}
-      
-      se (result >= 40){
-        escreva("\n\nVocê está com obesidade III\n")}    
+      se (result >= 29.9){
+        escreva("\n\nVoce esta acima do peso\n")}
+ 
+  }
+
+  funcao inicio () {
+    enquanto(reiniciar){
+      imc()
+      escreva("Deseja verificar outro número ? Digite Sim ou Não\n")
+      escreva("Resposta:\t")
+      leia(reiniciar)
+      limpa (result)
+    }
   }
 }
