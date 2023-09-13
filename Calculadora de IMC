@@ -5,15 +5,15 @@ programa {
 
   funcao inicio() {
     escreva("Calculadora de IMC\n")
-    escreva("\nDigite a sua altura em metros:\t\n")
+    escreva("\nDigite a sua altura:\t\n")
     escreva("resposta:\t")
     leia(altura)
-    escreva("\nDigite o seu peso em kg:\t\n")
+    escreva("\nDigite o seu peso:\t\n")
     escreva("resposta:\t")
     leia(peso)
     limpa ()
     result = peso / (altura * altura)
-    escreva("\nseu imc é:\t" + result)
+    escreva("\nSeu IMC é:\t" + result)
 
       se (result <= 18.5){
         escreva("\n\nVoce esta abaixo do peso\n")}
