@@ -11,25 +11,26 @@ programa {
     escreva("\nDigite o seu peso em kg:\t\n")
     escreva("resposta:\t")
     leia(peso)
+    limpa ()
     result = peso / (altura * altura)
     escreva("\nseu imc é:\t" + result)
 
       se (result <= 18.5){
-        escreva("\tVoce esta abaixo do peso\n")}
+        escreva("\n\nVoce esta abaixo do peso\n")}
       
       se (result <= 24.9){
-        escreva("\tVocê está com o peso ideial\n")}
+        escreva("\n\nVocê está com o peso ideial\n")}
 
       se (result <= 29.9){
-        escreva("\tVoce esta levemente acima do peso\n")}
+        escreva("\n\nVoce esta levemente acima do peso\n")}
       
       se (result <= 34.9){
-        escreva("\tVocê está com obesidade I\n")}
+        escreva("\n\nVocê está com obesidade I\n")}
       
       se (result <= 39.9){
-        escreva("\tVocê está com obesidade II\n")}
+        escreva("\n\nVocê está com obesidade II\n")}
       
       se (result >= 40){
-        escreva("\tVocê está com obesidade III\n")}    
+        escreva("\n\nVocê está com obesidade III\n")}    
   }
 }
