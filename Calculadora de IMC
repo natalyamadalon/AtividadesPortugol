@@ -1,7 +1,35 @@
 programa {
-  real peso, altura, formula = peso/(altura*altura)
-  // imc <= 18.5 é abaixo do peso, imc <= 24.9 é peso ideal, imc >= 25 é acima do peso
+  real altura
+  real peso
+  real result
+
   funcao inicio() {
-    
+    escreva("Calculadora de IMC\n")
+    escreva("\nDigite a sua altura em metros:\t\n")
+    escreva("resposta:\t")
+    leia(altura)
+    escreva("\nDigite o seu peso em kg:\t\n")
+    escreva("resposta:\t")
+    leia(peso)
+    result = peso / (altura * altura)
+    escreva("\nseu imc é:\t" + result)
+
+      se (result <= 18.5){
+        escreva("\tVoce esta abaixo do peso\n")}
+      
+      se (result <= 24.9){
+        escreva("\tVocê está com o peso ideial\n")}
+
+      se (result <= 29.9){
+        escreva("\tVoce esta levemente acima do peso\n")}
+      
+      se (result <= 34.9){
+        escreva("\tVocê está com obesidade I\n")}
+      
+      se (result <= 39.9){
+        escreva("\tVocê está com obesidade II\n")}
+      
+      se (result >= 40){
+        escreva("\tVocê está com obesidade III\n")}    
   }
 }
