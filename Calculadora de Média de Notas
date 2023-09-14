@@ -23,7 +23,7 @@ real media
   funcao inicio() {
     enquanto(reiniciar){
     media()
-    escreva("\n\nPara calcular novamente digite 'verdadeiro' e para encerrar digite 'falso'\n")
+    escreva("\n\nDeseja calcular outros números ? Digite Sim ou Não\n")
     escreva("\nResposta:\t")
     leia(reiniciar)
     limpa()
