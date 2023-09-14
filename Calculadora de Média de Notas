@@ -1,1 +1,32 @@
+programa {
 
+  logico reiniciar = verdadeiro
+  real nota1, nota2, nota3, nota4
+  real resposta
+  real media
+
+  funcao media() {
+    escreva("Calculadora de Média de Notas\n\n\n")
+    escreva("Informe quantas notas que você deseja calcular a média:\n")
+    escreva("\nNota 1: ")
+    leia(nota1)
+    escreva("Nota 2: ")
+    leia(nota2)
+    escreva("Nota 3: ")
+    leia(nota3)
+    escreva("Nota 4: ")
+    leia(nota4)
+    media = (nota1 + nota2+  nota3 + nota4)/4
+    escreva ("\nA média aritmética é:\t" + media ) 
+  }
+
+  funcao inicio() {
+    enquanto(reiniciar){
+    media()
+    escreva("\nPara calcular novamente digite 'verdadeiro' e para encerrar digite 'falso'\n")
+    escreva("Resposta:\t")
+    leia(reiniciar)
+    limpa()
+    }
+  } 
+}
