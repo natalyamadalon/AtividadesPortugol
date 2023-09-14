@@ -76,3 +76,31 @@ programa {
       escreva ("O número secreto é menor")
   }
 }
+
+
+
+
+programa {
+  inclua biblioteca Util --> numero
+  inteiro sorteio = numero.sorteia (1, 100)
+  inteiro resposta
+  inteiro tentativa
+
+  funcao inicio() {
+    escreva ("Olá! Seja bem vindo ao jogo de adivinhação.\n\n")
+    escreva ("Você terá 10 tentativas para adivinhar um número secreto e a cada tentativa receberá uma dica. Vamos começar?\n\n")
+    escreva ("Digite a tentativa:\t")
+    resposta = numero.sorteia (1, 100)
+    leia (tentativa)
+
+    se ("tentativa == numero")
+      escreva ("Parabéns você acertou!!")
+
+    se ("tentativa <= numero")
+      escreva ("O número secreto é maior")
+
+    se ("tentativa >= numero")
+      escreva ("O número secreto é menor")
+
+  }
+}
