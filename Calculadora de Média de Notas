@@ -17,7 +17,7 @@ real media
     escreva("Nota 4: ")
     leia(nota4)
     media = (nota1 + nota2+  nota3 + nota4)/4
-    escreva ("\nA média aritmética é:\t" + media ) 
+    escreva ("\nA média é:\t" + media ) 
   }
 
   funcao inicio() {
