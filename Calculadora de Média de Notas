@@ -1,13 +1,13 @@
 programa {
 
-  logico reiniciar = verdadeiro
-  real nota1, nota2, nota3, nota4
-  real resposta
-  real media
+logico reiniciar = verdadeiro
+real nota1, nota2, nota3, nota4
+real resposta
+real media
 
   funcao media() {
     escreva("Calculadora de Média de Notas\n\n\n")
-    escreva("Informe quantas notas que você deseja calcular a média:\n")
+    escreva("Informe as notas que você deseja calcular a média:\n")
     escreva("\nNota 1: ")
     leia(nota1)
     escreva("Nota 2: ")
@@ -23,8 +23,8 @@ programa {
   funcao inicio() {
     enquanto(reiniciar){
     media()
-    escreva("\nPara calcular novamente digite 'verdadeiro' e para encerrar digite 'falso'\n")
-    escreva("Resposta:\t")
+    escreva("\n\nPara calcular novamente digite 'verdadeiro' e para encerrar digite 'falso'\n")
+    escreva("\nResposta:\t")
     leia(reiniciar)
     limpa()
     }
