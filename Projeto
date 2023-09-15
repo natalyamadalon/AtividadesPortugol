@@ -20,87 +20,31 @@ O programa deve informar ao jogador se ele ganhou ou perdeu o jogo.
 O jogador pode optar por jogar novamente após ganhar ou perder.
 Este projeto permitirá que você pratique a geração de números aleatórios, o uso de estruturas de repetição, condicionais e entrada/saída de dados em programas simples de jogos.
 
-TENTATIVA 1 ________________________________________________________________________________________________________________________________
 programa {
-  inclua biblioteca util --> numero
-  inteiro sorteio = numero.sorteia (1, 100)
-  funcao inicio() {
-    
-  }
-}
-
-TENTATIVA 2 ________________________________________________________________________________________________________________________________
-
-programa {
-  inclua biblioteca Util --> numero
-  inteiro sorteio = numero.sorteia (1, 100)
-
-  funcao inicio() {
-    escreva ("Olá! Bem vindo ao jogo de adivinhação.\n\n")
-    escreva ("Você terá 10 tentativas para adivinhar um número secreto e a cada tentativa receberá uma dica. Vamos começar?\n\n")
-    escreva ("Digite a primeira tentativa:\t")
-    leia ()
-
-    se ("tentativa == numero")
-    escreva ("Parabéns você acertou!!")
-
-    se ("tentativa <= numero")
-    escreva ("")
-
-    se ("tentativa >= numero")
-    escreva ("Parabéns você acertou!!")
-  }
-}
-
-TENTATIVA 3 ________________________________________________________________________________________________________________________________
-
-programa {
-  inclua biblioteca Util --> numero
-  inteiro sorteio = numero.sorteia (1, 100)
-  inteiro resposta
-
-  funcao inicio() {
-    escreva ("Olá! Seja bem vindo ao jogo de adivinhação.\n\n")
-    escreva ("Você terá 10 tentativas para adivinhar um número secreto e a cada tentativa receberá uma dica. Vamos começar?\n\n")
-    escreva ("Digite a tentativa:\t")
-    resposta = sorteio
-    leia (resposta)
-
-    se ("resposta == numero.sorteia")
-      escreva ("Parabéns você acertou!!")
-
-    se ("resposta <= numero.sorteia")
-      escreva ("O número secreto é maior")
-
-    se ("resposta >= numero.sorteia")
-      escreva ("O número secreto é menor")
-  }
-}
-
-
-
-
-programa {
-  inclua biblioteca Util --> numero
-  inteiro sorteio = numero.sorteia (1, 100)
-  inteiro resposta
+  inclua biblioteca Util --> u
+  inteiro sorteio = u.sorteia (1, 100)
   inteiro tentativa
 
+  inteiro result
+
   funcao inicio() {
     escreva ("Olá! Seja bem vindo ao jogo de adivinhação.\n\n")
-    escreva ("Você terá 10 tentativas para adivinhar um número secreto e a cada tentativa receberá uma dica. Vamos começar?\n\n")
+    escreva ("Você terá 10 tentativas para adivinhar um número secreto de 1 a 100 e a cada tentativa receberá uma dica. Vamos começar?\n\n")
     escreva ("Digite a tentativa:\t")
-    resposta = numero.sorteia (1, 100)
     leia (tentativa)
+    
+    enquanto () {
+    se (tentativa == sorteio) { 
+    escreva ("\nParabéns você acertou!!")
+    }
 
-    se ("tentativa == numero")
-      escreva ("Parabéns você acertou!!")
+    se (tentativa <= sorteio) {
+      escreva ("\nO número secreto é maior")
+    }
 
-    se ("tentativa <= numero")
-      escreva ("O número secreto é maior")
-
-    se ("tentativa >= numero")
-      escreva ("O número secreto é menor")
-
+    se (tentativa >= sorteio) {
+      escreva ("\nO número secreto é menor")
+    }
+    }
   }
 }
