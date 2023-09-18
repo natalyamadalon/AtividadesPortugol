@@ -3,7 +3,7 @@ programa {
   logico reiniciarLogico = verdadeiro
   inteiro numeroSecreto = u.sorteia(1, 100)
   inteiro contadorDeTentativas = 0
-  inteiro palpite
+  inteiro tentativa
   cadeia respostaReiniciar
 
   funcao inicio() {
@@ -12,30 +12,30 @@ programa {
       escreva ("Olá! Seja bem vindo ao jogo de adivinhação.\n\n")
       escreva ("Você terá 10 tentativas para adivinhar um número secreto de 1 a 100 e a cada tentativa receberá uma dica. Vamos começar?\n\n")
       contadorDeTentativas++
-      escreva("Palpite\t", contadorDeTentativas, ":\t")
-      leia(palpite)
+      escreva("tentativa\t", contadorDeTentativas, ":\t")
+      leia(tentativa)
     
       enquanto(contadorDeTentativas < 10){
-        se(palpite == numeroSecreto){
+        se(tentativa == numeroSecreto){
         escreva("\nJogo de Advinhação\n\n")
         escreva("Parabéns você acertou com\t",contadorDeTentativas+1 ,"\ttentativas o número secreto:\t", numeroSecreto,"\n")
         pare
         }
 
-        se(palpite < numeroSecreto){
+        se(tentativa < numeroSecreto){
           contadorDeTentativas++
           escreva("\nJogo de Advinhação\n\n")
           escreva("O número secreto é maior.\n\n")
           escreva("Palpite\t", contadorDeTentativas, ":\t")
-          leia(palpite)
+          leia(tentativa)
         }
 
-        se(palpite > numeroSecreto){
+        se(tentativa > numeroSecreto){
           contadorDeTentativas++
           escreva("\nJogo de Advinhação\n\n")
           escreva("O número secreto é menor.\n\n")
-          escreva("Palpite\t", contadorDeTentativas, ":\t")
-          leia(palpite)
+          escreva("tentativa\t", contadorDeTentativas, ":\t")
+          leia(tentativa)
         }
 
         se(contadorDeTentativas == 10){
